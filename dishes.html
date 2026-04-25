@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our exquisite menu featuring seasonal ingredients and modern culinary techniques.">
+    <meta name="theme-color" content="#050a18">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luminadining.com/dishes.html">
+    <meta property="og:title" content="Our Dishes | Lumina Dining">
+    <meta property="og:description" content="Explore our exquisite menu featuring seasonal ingredients and modern culinary techniques.">
+    <meta property="og:image" content="images/dish1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://luminadining.com/dishes.html">
+    <meta property="twitter:title" content="Our Dishes | Lumina Dining">
+    <meta property="twitter:description" content="Explore our exquisite menu featuring seasonal ingredients and modern culinary techniques.">
+    <meta property="twitter:image" content="images/dish1.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>">
+    <link rel="canonical" href="https://luminadining.com/dishes.html">
+
+    <title>Our Dishes | Lumina Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="loading">
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">LUMINA</div>
+            <div class="preloader-line"></div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">LUMINA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dishes.html" class="active">Dishes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem;">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section style="padding-top: 10rem;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 5rem;">
+                    <h1 style="margin-bottom: 1rem;">The <span style="color: var(--primary);">Menu</span></h1>
+                    <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">A curated selection of modern classics and innovative creations, crafted with the freshest seasonal ingredients.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 2.5rem; align-items: center; justify-content: center;">
+                    <!-- Dish 1 -->
+                    <div class="glass" style="border-radius: 25px; overflow: hidden; aspect-ratio: 1/1; width: 100%; position: relative;">
+                        <img src="images/dish1.png" alt="Grilled Salmon" loading="lazy" decoding="async" style="height: 100%; width: 100%; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(5, 10, 24, 0.9)); padding: 2rem 1rem 1.5rem; text-align: center;">
+                            <h3 style="margin: 0; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Grilled Atlantic Salmon</h3>
+                        </div>
+                    </div>
+
+                    <!-- Dish 2 -->
+                    <div class="glass" style="border-radius: 25px; overflow: hidden; aspect-ratio: 1/1; width: 100%; position: relative;">
+                        <img src="images/dish2.png" alt="Truffle Pasta" loading="lazy" decoding="async" style="height: 100%; width: 100%; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(5, 10, 24, 0.9)); padding: 2rem 1rem 1.5rem; text-align: center;">
+                            <h3 style="margin: 0; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Truffle Cream Pasta</h3>
+                        </div>
+                    </div>
+
+                    <!-- Dish 3 -->
+                    <div class="glass" style="border-radius: 25px; overflow: hidden; aspect-ratio: 1/1; width: 100%; position: relative;">
+                        <img src="images/dish3.png" alt="Wagyu Steak" loading="lazy" decoding="async" style="height: 100%; width: 100%; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(5, 10, 24, 0.9)); padding: 2rem 1rem 1.5rem; text-align: center;">
+                            <h3 style="margin: 0; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Premium Wagyu Steak</h3>
+                        </div>
+                    </div>
+
+                    <!-- Dish 4 -->
+                    <div class="glass" style="border-radius: 25px; overflow: hidden; aspect-ratio: 1/1; width: 100%; position: relative;">
+                        <img src="images/dish4.png" alt="Exotic Dessert" loading="lazy" decoding="async" style="height: 100%; width: 100%; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(5, 10, 24, 0.9)); padding: 2rem 1rem 1.5rem; text-align: center;">
+                            <h3 style="margin: 0; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Midnight Velvet Dessert</h3>
+                        </div>
+                    </div>
+
+                    <!-- Dish 5 -->
+                    <div class="glass" style="border-radius: 25px; overflow: hidden; aspect-ratio: 1/1; width: 100%; position: relative;">
+                        <img src="images/dish5.png" alt="Sushi Platter" loading="lazy" decoding="async" style="height: 100%; width: 100%; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(5, 10, 24, 0.9)); padding: 2rem 1rem 1.5rem; text-align: center;">
+                            <h3 style="margin: 0; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Signature Sushi Platter</h3>
+                        </div>
+                    </div>
+
+                    <!-- Dish 6 -->
+                    <div class="glass" style="border-radius: 25px; overflow: hidden; aspect-ratio: 1/1; width: 100%; position: relative;">
+                        <img src="images/dish2.png" alt="Gourmet Pasta" loading="lazy" decoding="async" style="height: 100%; width: 100%; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(5, 10, 24, 0.9)); padding: 2rem 1rem 1.5rem; text-align: center;">
+                            <h3 style="margin: 0; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Porcini Mushroom Pasta</h3>
+                        </div>
+                    </div>
+
+                    <!-- Dish 7 -->
+                    <div class="glass" style="border-radius: 25px; overflow: hidden; aspect-ratio: 1/1; width: 100%; position: relative;">
+                        <img src="images/dish1.png" alt="Specialty Salmon" loading="lazy" decoding="async" style="height: 100%; width: 100%; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(5, 10, 24, 0.9)); padding: 2rem 1rem 1.5rem; text-align: center;">
+                            <h3 style="margin: 0; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Citrus Glazed Salmon</h3>
+                        </div>
+                    </div>
+
+                    <!-- Dish 8 -->
+                    <div class="glass" style="border-radius: 25px; overflow: hidden; aspect-ratio: 1/1; width: 100%; position: relative;">
+                        <img src="images/dish4.png" alt="Signature Dessert" loading="lazy" decoding="async" style="height: 100%; width: 100%; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(5, 10, 24, 0.9)); padding: 2rem 1rem 1.5rem; text-align: center;">
+                            <h3 style="margin: 0; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Golden Vanilla Bean Sphere</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: block;">LUMINA</a>
+                    <p>Redefining the art of dining with modern techniques and timeless flavors.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="dishes.html">Our Dishes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>123 Gourmet Street<br>Culinary District, NY 10001<br>+1 (555) 123-4567</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <p>Mon - Fri: 5pm - 11pm<br>Sat - Sun: 12pm - 12am</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Dining. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
